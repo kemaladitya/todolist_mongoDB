@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>todolist</title>
+    <!-- jquery -->
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <!-- boot cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+  </head>
+  <body class="container bg-info">
+    <h1>My Todo List</h1>
+    <div id="todo-table">
+      <form>
+        <input name="item" class="form-control form-control-lg" type="text" placeholder="input new item.." required />
+        <button class="btn btn-warning" type="submit">Add Item</button>
+      </form>
+      <br>
+
+      <ul class="list-group text-primary">
+        <% for(var i = 0; i < todos.length; i++) { %>
+           <li class="list-group-item"> <%= todos[i].item %> </li>
+        <% } %>
+      </ul>
+
+
+    </div>
+      </body>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> -->
+    <!-- jquery -->
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+
+
+    <script src="/assets/todo-list.js"></script>
+</html>
